@@ -1,0 +1,50 @@
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.movie-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid var(--main-gray);
+    box-shadow: 0 0 3px 1px var(--main-gray);
+}
+
+.movie-card button {
+    border: none;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    border-radius: 45%;
+    width: 18px;
+    height: 18px;
+    font-weight: 800;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.movie-card button span {
+    position: relative;
+    top: -4px;
+    font-size: 1.05rem;
+}
+
+.movie-card button:hover {
+    opacity: 0.4;
+}
+
+.movie-title {
+    font-weight: 800;
+}
+
+.movie-info {
+    padding: 15px 0 12px 10px;
+}
+
+.release-date {
+    font-weight: 300;
+}

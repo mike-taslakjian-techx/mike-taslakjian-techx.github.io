@@ -1,5 +1,6 @@
 .sort {
     border: 1px solid var(--main-gray);
+    box-shadow: 0 0 3px 1px var(--main-gray);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -27,7 +28,7 @@
 }
 
 .sort .selection select {
-    padding: 10px 1px; 
+    padding: 10px 1px;
     border-radius: 8px;
     background-color: var(--white);
     font-size: 0.95rem;
