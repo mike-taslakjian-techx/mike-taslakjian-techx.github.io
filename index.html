@@ -5,9 +5,10 @@
         <meta charset="UTF-8" />
         <meta name="author" content="Mike Taslakjian" />
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="Styles/styles.css" />
         <link rel="stylesheet" href="Styles/header.css" />
+        <link rel="stylesheet" href="Styles/filters.css" />
     </head>
     <body>
         <header>
@@ -32,6 +33,33 @@
                 </nav>
             </nav>
         </header>
+        <main>
+            <h1 class="main-title">Popular Movies</h1>
+            <section>
+                <div class="filters">
+                    <div class="sort">
+                        <div class="title">
+                            <p>Sort</p>
+                            <span>></span>
+                        </div>
+                        <div class="selection">
+                            <p>Sort Results By</p>
+                            <select>
+                                <option>Popularity Descending</option>
+                                <option>Popularity Ascending</option>
+                                <option>Rating Descending</option>
+                                <option>Rating Ascending</option>
+                                <option>Release Date Descending</option>
+                                <option>Release Date Ascending</option>
+                                <option>Title (A-Z)</option>
+                                <option>Title (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-cards"></div>
+            </section>
+        </main>
         <script src="main.js"></script>
     </body>
 </html>

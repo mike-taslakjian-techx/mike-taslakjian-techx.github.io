@@ -7,9 +7,25 @@
 :root {
     --main-theme: rgb(3, 37, 65);
     --white: rgb(255, 255, 255);
+    --main-gray: #E3E3E3;
+    --blue: #01b3e4;
 }
 
 body {
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+}
+
+main {
+    max-width: 1400px;
+    margin: 15px auto;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
 }

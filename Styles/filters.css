@@ -1,0 +1,39 @@
+.sort {
+    border: 1px solid var(--main-gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sort .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 1px solid var(--main-gray);
+}
+
+.sort .selection {
+    padding: 10px 14px;
+}
+
+.sort .selection p {
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 0.95rem;
+}
+
+.sort .selection select {
+    padding: 10px 1px; 
+    border-radius: 8px;
+    background-color: var(--white);
+    font-size: 0.95rem;
+}
+
+.sort .selection select:focus {
+    outline: 1px solid var(--blue);
+    border: none;
+}
