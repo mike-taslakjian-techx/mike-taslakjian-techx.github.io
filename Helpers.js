@@ -1,7 +1,8 @@
 // Function accepts the sort_by parameter and returns a sorted array of movies
 
 async function getMovies (sortBy) {
-    const url = `https://api.themoviedb.org/3/movie/popular?sort_by=${sortBy}`;
+    const url = `https://api.themoviedb.org/3/movie/popular?page=1&sort_by=${sortBy}`;
+    console.log(url);
     try {
         const response = await fetch(url, {
             method: "GET",

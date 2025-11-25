@@ -70,4 +70,10 @@
     left: 0;
     font-size: 1.05rem;
     display: none;
+    cursor: pointer;
+}
+
+.button-active {
+    background-color: var(--blue);
+    color: var(--white);
 }
