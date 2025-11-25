@@ -52,5 +52,5 @@
 
 .release-date {
     font-weight: 300;
-    color: var(--release-date);
+    color: var(--darker-date);
 }
