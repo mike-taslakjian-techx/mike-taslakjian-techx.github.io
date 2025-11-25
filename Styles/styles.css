@@ -9,6 +9,7 @@
     --white: rgb(255, 255, 255);
     --main-gray: #E3E3E3;
     --blue: #01b3e4;
+    --release-date: rgba(0, 0, 0, 0.6);
 }
 
 body {

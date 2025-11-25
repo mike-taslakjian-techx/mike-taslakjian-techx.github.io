@@ -8,10 +8,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 8px;
     border: 1px solid var(--main-gray);
     box-shadow: 0 0 3px 1px var(--main-gray);
+    width: clamp(170px, 20%, 370px);
+}
+
+.movie-card img {
+    width: 100%;
 }
 
 .movie-card button {
@@ -37,14 +41,16 @@
     opacity: 0.4;
 }
 
-.movie-title {
-    font-weight: 800;
+.movie-info {
+    padding: 26px 10px 12px;
 }
 
-.movie-info {
-    padding: 15px 0 12px 10px;
+.movie-title {
+    font-weight: 800;
+    width: 80%;
 }
 
 .release-date {
     font-weight: 300;
+    color: var(--release-date);
 }
