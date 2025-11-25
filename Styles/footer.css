@@ -1,0 +1,57 @@
+footer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background-color: var(--main-theme);
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+}
+
+footer img {
+    width: 130;
+    height: 94px;
+    position: relative;
+    top: -33px;
+}
+
+footer button {
+    height: 45px;
+    width: 236px;
+    border-radius: 5px;
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 1.2rem;
+    background-color: var(--white);
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 1.05rem;
+}
+
+footer ul li {
+    margin-bottom: 3px;
+
+}
+
+footer h2,
+footer a { 
+    color: var(--white);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.community {
+    align-items: flex-end;
+}
