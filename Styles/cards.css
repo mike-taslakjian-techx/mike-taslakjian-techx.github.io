@@ -14,9 +14,13 @@
     width: clamp(170px, 20%, 195px);
 }
 
+.movie-card a {
+    position: relative;
+}
+
 .movie-card img {
     width: 100%;
-    height: 270px;
+    height: 280px;
     border-radius: 8px 8px 0 0;
     background-color: var(--main-gray);
 }
@@ -72,4 +76,24 @@
 
 .load-more:hover {
     color: var(--black);
+}
+
+.rating-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--black);
+    position: absolute;
+    top: 92%;
+    left: 15px;
+    z-index: 1;
+}
+
+.rating {
+    margin: 3px auto 0;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background: var(--white);
+    background: conic-gradient
 }

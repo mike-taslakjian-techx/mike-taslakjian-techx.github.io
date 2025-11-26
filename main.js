@@ -26,10 +26,12 @@ observer.observe(searchBtn);
 
 window.addEventListener("DOMContentLoaded", async () => {
     const movies = await getMovies(select.value, page, genreIDs);
+    console.log(movies);
     const genresArr = await getGenres();
+
     movieCards.innerHTML = showCards(movies);
     
-    genresArr.forEach(({ id, name }) => genres.innerHTML += `<button id="${id}">${name}</button>`)
+    genresArr.forEach(({ id, name }) => genres.innerHTML += `<button id="${id}">${name}</button>`);
     
 });
 

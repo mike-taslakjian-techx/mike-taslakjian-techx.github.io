@@ -32,13 +32,20 @@ async function getMovies (sortBy, pages, genres) {
 // Function accepts an array of movies and returns an HTML string
 
 function showCards (movies) {
-    const moviesHTML = movies.map(({ poster_path, title, release_date }) => {
+    const moviesHTML = movies.map(({ poster_path, title, release_date, vote_average }) => {
         const src = poster_path ? `https://media.themoviedb.org/t/p/w220_and_h330_face${poster_path}` : "assets/cards/no-image.svg";
+        //const gradient = NavigationHistoryEntry;
         return (
             `<div class="movie-card">
                 <button><span>...</span></button>
-                <div></div>
-                <a href=""><img src="${src}" alt="${title} poster" /><a/>
+                <a href="">
+                    <img src="${src}" alt="${title} poster" />
+                    <div class="rating-container">
+                        <div class="rating" style="background: ${getGradient(vote_average)};">
+                            <div>${getRating(vote_average)}</div>
+                        </div>
+                    </div>
+                <a/>
                 <div class="movie-info">
                     <p class="movie-title">${title}</p>
                     <p class="release-date">${release_date}</p>
@@ -71,11 +78,34 @@ async function getGenres () {
     }
 };
 
+// Function to activate any button
+
 function activateBtn (button) {
     button.style.backgroundColor = "var(--blue)";
     button.style.color = "var(--white)";
     button.disabled = false;
     button.style.cursor = "pointer";
+};
+
+// Function to calculate movie rating
+
+function getRating (rating) {
+    return Math.ceil(rating * 10);
+}
+
+// Function to return gradient string for ratings
+
+function getGradient (rating) {
+    const angle = (getRating(rating) / 100) * 360;
+    const hue = (getRating(rating) / 100) * 120;
+    const fillColor = `hsl(${hue}, 70%, 40%)`;
+    const emptyColor = `#E0E0E0`;
+    const gradientCSS = `conic-gradient(
+      ${fillColor} 0deg ${angle}deg,
+      ${emptyColor} ${angle}deg 360deg
+    )`;
+    console.log(gradientCSS);
+    return gradientCSS;
 }
 
 export { getMovies, showCards, getGenres, activateBtn };
