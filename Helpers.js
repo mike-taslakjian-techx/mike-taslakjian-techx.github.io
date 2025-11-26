@@ -41,8 +41,8 @@ function showCards (movies) {
                 <a href="">
                     <img src="${src}" alt="${title} poster" />
                     <div class="rating-container">
-                        <div class="rating" style="background: ${getGradient(vote_average)};">
-                            <div>${getRating(vote_average)}</div>
+                        <div class="rating-background" style="background: ${getGradient(vote_average)};">
+                            <div class="rating">${getRating(vote_average)}<span>%</span></div>
                         </div>
                     </div>
                 <a/>
@@ -104,7 +104,6 @@ function getGradient (rating) {
       ${fillColor} 0deg ${angle}deg,
       ${emptyColor} ${angle}deg 360deg
     )`;
-    console.log(gradientCSS);
     return gradientCSS;
 }
 

@@ -63,6 +63,8 @@ searchBtn.addEventListener("click", async () => {
     const movies = await getMovies(select.value, page, genreIDs);
     movieCards.innerHTML = showCards(movies);
     searchBtn.disabled = true;
+    searchBtn.style.backgroundColor = `var(--main-gray)`;
+    searchBtn.style.color = "var(--darker-gray)";
     searchBtn.style.cursor = "auto";
     searchBtn.classList.remove("button-active");
     bigButton.style.display = "none";
@@ -88,7 +90,13 @@ loadMoreBtn.addEventListener("click", async () => {
 
 genres.addEventListener("click", (e) => {
     const button = e.target.closest("button");
-    genreIDs.push(button.id);
-    activateBtn(searchBtn);
-    activateBtn(button);
+    if (genreIDs.includes(button.id)) {
+        button.style.backgroundColor = "var(--white)";
+        button.style.color = "var(--black)";
+        genreIDs.splice(genreIDs.lastIndexOf(button.id), 1);
+    } else {
+        genreIDs.push(button.id);
+        activateBtn(searchBtn);
+        activateBtn(button);
+    }
 });

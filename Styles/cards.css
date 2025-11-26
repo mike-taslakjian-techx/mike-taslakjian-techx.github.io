@@ -55,11 +55,12 @@
 .movie-title {
     font-weight: 800;
     width: 80%;
+    
 }
 
 .release-date {
     font-weight: 300;
-    color: var(--darker-date);
+    color: var(--darker-gray);
     margin-top: 2px;
 }
 
@@ -87,13 +88,35 @@
     top: 92%;
     left: 15px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.rating {
-    margin: 3px auto 0;
+.rating-background {
     width: 33px;
     height: 33px;
     border-radius: 50%;
     background: var(--white);
-    background: conic-gradient
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating {
+    width: 28px;
+    height: 28px;
+    background-color: var(--black);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating span {
+    font-size: 0.55rem;
+    position: relative;
+    top: -3px;
 }
