@@ -30,7 +30,7 @@ footer button {
     font-size: 1.2rem;
     background-color: var(--white);
     padding: 0 8px;
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 footer ul {

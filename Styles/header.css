@@ -48,7 +48,7 @@ header a {
 }
 
 .language {
-    border: 1px solid white;
+    border: 1px solid var(--white);
     padding: 5px;
     border-radius: 3px;
     font-weight: bold;

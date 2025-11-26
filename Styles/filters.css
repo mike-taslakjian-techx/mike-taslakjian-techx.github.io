@@ -4,17 +4,19 @@
     gap: 15px;
 }
 
-.sort {
+.sort,
+.filter {
     border: 1px solid var(--main-gray);
     box-shadow: 0 0 3px 1px var(--main-gray);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 220px;
+    width: 250px;
 }
 
-.sort .title {
+.sort .title,
+.filter .title{
     display: flex;
     justify-content: space-between;
     padding: 14px 16px;
@@ -24,27 +26,28 @@
     cursor: pointer;
 }
 
-.sort .selection {
+.selection {
     padding: 10px 14px;
     display: none;
 }
 
-.sort .selection p {
+.selection p {
     margin-bottom: 8px;
     font-weight: 300;
     font-size: 0.95rem;
 }
 
 .sort .selection select {
-    padding: 10px 1px;
+    padding: 5px 1px;
     border-radius: 8px;
     background-color: var(--white);
-    font-size: 0.95rem;
+    height: 35px;
+    font-size: 0.80rem;
+    width: 100%;
 }
 
-.sort .selection select:focus {
+.sort .selection select:active {
     outline: 1px solid var(--blue);
-    border: none;
 }
 
 .search-button {
@@ -52,7 +55,7 @@
     background-color: var(--main-gray);
     border-radius: 15px;
     border: none;
-    height: 35px;
+    height: 40px;
     color: var(--darker-gray);
     cursor: pointer;
     font-size: 1.05rem;
@@ -76,4 +79,20 @@
 .button-active {
     background-color: var(--blue);
     color: var(--white);
+}
+
+.genres button {
+    background-color: var(--white);
+    padding: 5px 9px;
+    border-radius: 15px;
+    border: 1px solid var(--darker-gray);  
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 8px;
+}
+
+.genres button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
 }
