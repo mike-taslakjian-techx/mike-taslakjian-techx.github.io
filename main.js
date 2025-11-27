@@ -79,6 +79,8 @@ bigButton.addEventListener("click", async () => {
     searchBtn.disabled = true;
     searchBtn.style.cursor = "auto";
     bigButton.style.display = "none";
+    searchBtn.style.backgroundColor = `var(--main-gray)`;
+    searchBtn.style.color = "var(--darker-gray)";
     genreIDs = [];
 });
 

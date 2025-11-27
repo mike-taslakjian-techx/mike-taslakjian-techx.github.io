@@ -91,7 +91,7 @@ function activateBtn (button) {
 
 function getRating (rating) {
     return Math.ceil(rating * 10);
-}
+};
 
 // Function to return gradient string for ratings
 
@@ -100,11 +100,13 @@ function getGradient (rating) {
     const hue = (getRating(rating) / 100) * 120;
     const fillColor = `hsl(${hue}, 70%, 40%)`;
     const emptyColor = `#E0E0E0`;
+
     const gradientCSS = `conic-gradient(
       ${fillColor} 0deg ${angle}deg,
       ${emptyColor} ${angle}deg 360deg
     )`;
+
     return gradientCSS;
-}
+};
 
 export { getMovies, showCards, getGenres, activateBtn };

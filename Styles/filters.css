@@ -26,9 +26,13 @@
     cursor: pointer;
 }
 
-.selection {
+.sort .selection {
     padding: 10px 14px;
     display: none;
+}
+
+.filter .selection {
+    padding: 10px 14px;
 }
 
 .selection p {
@@ -81,6 +85,11 @@
     color: var(--white);
 }
 
+.genres {
+    border-bottom: 1px solid var(--main-gray);
+    margin: 5px 0;
+}
+
 .genres button {
     background-color: var(--white);
     padding: 5px 9px;
@@ -95,4 +104,16 @@
     background-color: var(--blue);
     color: var(--white);
     border: 1px solid var(--blue);
+}
+
+.keywords input {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--darker-gray);  
+    height: 40px;
+}
+
+.keywords input::placeholder {
+    color: var(--black);
 }
