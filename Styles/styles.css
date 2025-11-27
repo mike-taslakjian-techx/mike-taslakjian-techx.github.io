@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: rgb(0, 0, 0);
+    --blue: #01b3e4;
+    --darker-gray: rgba(0, 0, 0, 0.6);
+    --main-gray: #E3E3E3;
+    --main-theme: rgb(3, 37, 65);
+    --white: rgb(255, 255, 255);
+}
+
+body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    height: 100vh;
+}
+
+main {
+    margin: 15px auto;
+    max-width: 1400px;
+}
+
+.main-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+section {
+    display: flex;
+    gap: 25px;
+}
+
+.hide { 
+    display: none;
+}
