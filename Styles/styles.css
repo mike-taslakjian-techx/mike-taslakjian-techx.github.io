@@ -1,26 +1,26 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root {
-    --main-theme: rgb(3, 37, 65);
-    --white: rgb(255, 255, 255);
-    --main-gray: #E3E3E3;
+    --black: rgb(0, 0, 0);
     --blue: #01b3e4;
     --darker-gray: rgba(0, 0, 0, 0.6);
-    --black: rgb(0, 0, 0);
+    --main-gray: #E3E3E3;
+    --main-theme: rgb(3, 37, 65);
+    --white: rgb(255, 255, 255);
 }
 
 body {
-    height: 100vh;
     font-family: "Source Sans Pro", Arial, sans-serif;
+    height: 100vh;
 }
 
 main {
-    max-width: 1400px;
     margin: 15px auto;
+    max-width: 1400px;
 }
 
 .main-title {

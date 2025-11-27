@@ -1,18 +1,18 @@
 header {
-    width: 100%;
+    align-items: center;
     background-color: var(--main-theme);
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 64px;
+    justify-content: center;
     text-align: center;
+    width: 100%;
 }
 
 .nav-content {
-    max-width: 1400px;
-    width: 1400px;
     display: flex;
     justify-content: space-between;
+    max-width: 1400px;
+    width: 1400px;
 }
 
 header a {
@@ -20,36 +20,36 @@ header a {
 }
 
 .main-nav img {
-    width: 154px;
     height: 20px;
     margin-right: 35px;
+    width: 154px;
 }
 
 .secondary-nav img {
-    width: 30px;
     height: 43px;
+    width: 30px;
 }
 
 .main-nav,
 .secondary-nav {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .main-nav ul,
 .secondary-nav ul {
-    color: var(--white);
-    list-style: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    color: var(--white);
+    display: flex;
     gap: 35px;
+    justify-content: center;
+    list-style: none;
 }
 
 .language {
-    border: 1px solid var(--white);
-    padding: 5px;
     border-radius: 3px;
+    border: 1px solid var(--white);
     font-weight: bold;
+    padding: 5px;
 }
